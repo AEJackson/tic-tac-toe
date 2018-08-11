@@ -3,7 +3,7 @@
 
 ## The project requirements are:
 
-### Create the game of TicTacToe that:
+### Create the game of Tic Tac Toe that:
 1. Should be two player.
 2. Should tell the users if a win or a draw has happened.
 3. Should visually display the game as its played.
