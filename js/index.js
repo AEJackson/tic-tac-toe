@@ -47,10 +47,12 @@ $(function(event) {
 
     //set centering offset
     $(".grid").removeClass("col-xs-offset-4")
+    $(".grid").removeClass("col-xs-10")
+    $(".grid").addClass("col-xs-"+(dimension <= 12)? dimension : 0);
     var offset = parseInt( (dimension < 12)? ((12-dimension)/2) : 0 )
     if(offset > 0)
       $(".grid").addClass("col-xs-offset-"+offset);
-
+    debugger;
     //add an Event listener to each innerSquare class
     $(".innerSquare").off().on("click", processMove);
   };
@@ -220,7 +222,7 @@ $(function(event) {
 
         result = checkForWin(moveColumn, moveRow, newState);
         if (result != "")
-          alert(result);
+          $(".winner").html(result);
     }
 
   };
