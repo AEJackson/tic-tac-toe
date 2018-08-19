@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Include Bootstrap before my CSS file -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -32,18 +34,17 @@
     <div class="container-fluid">
       <h1>Sparta Tic Tac Toe Game</h1>
 
-      <h4>
+      <header>
         <div class="row">
           How may rows and columns: <input id="dimention" type="text" name="dimention" value="3">
         </div>
         <div class="row">
           <input id="submit" type="submit" value="Submit">
         </div>
-      </h4>
+      </header>
 
       <div class="row">
-        <div class="grid col-xs-10 col-xs-offset-4">
-
+        <div class="grid col-xs-12 col-xs-offset-4">
           <div class="row row0">
             <div class="col0 row0 innerSquare col-xs-1">.</div>
             <div class="col1 row0 innerSquare col-xs-1">.</div>
@@ -59,13 +60,12 @@
             <div class="col1 row2 innerSquare col-xs-1">.</div>
             <div class="col2 row2 innerSquare col-xs-1">.</div>
           </div>
-
         </div>
       </div>
-      <h2>Are you Feelin' lucky? well are you...</h2>
+      <!-- <h2>Are you Feelin' lucky? well are you...</h2> -->
     </div>
 
-    <!-- <h2>Are you Feelin' lucky? well are you...</h2> -->
+    <h2 class="winner">Are you Feelin' lucky? well are you...</h2>
 
     <script type="text/javascript" src="js/index.js"></script>
   </body>
